@@ -84,6 +84,9 @@ public class ProjectInfo{
 	@JsonIgnore
 	private int featureLength;
 	
+	@JsonIgnore
+	private String platformPath;
+	
 
 	////////////////////////////////////////////
 	//  Methods
@@ -414,6 +417,15 @@ public class ProjectInfo{
 	 */
 	public void setPluginPath(List<String> pluginPath) {
 		this.pluginPath = pluginPath;
+	}
+	
+	/**
+	 *
+	 * @param platformPath
+	 */
+
+	public void platformPath(List platformPath) {
+		this.platformPath = platformPath;
 	}
 	
 }// END
