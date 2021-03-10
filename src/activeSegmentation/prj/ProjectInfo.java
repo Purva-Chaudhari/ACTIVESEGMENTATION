@@ -23,6 +23,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown=true)
 public class ProjectInfo{
 	
 	///////////////////
@@ -84,8 +85,6 @@ public class ProjectInfo{
 	@JsonIgnore
 	private int featureLength;
 	
-	@JsonIgnore
-	private String platformPath;
 	
 
 	////////////////////////////////////////////
@@ -419,14 +418,6 @@ public class ProjectInfo{
 		this.pluginPath = pluginPath;
 	}
 	
-	/**
-	 *
-	 * @param platformPath
-	 */
-
-	public void platformPath(List platformPath) {
-		this.platformPath = platformPath;
-	}
-	
+		
 }// END
 
